@@ -1,0 +1,110 @@
+body{
+    background-color:rgb(254, 254, 254); /*trouver des couleurs sur site "color hunt"*/
+    font-family: 'Lora', serif;/*google font site*/
+    font-size: 16px;
+    letter-spacing: 1px; 
+    color: #25316D;
+}
+
+h1{font-family: 'Bebas Neue', cursive;
+    font-size: 30px;
+    letter-spacing: 8px;
+    color: #25316D;
+    }    
+
+h2{font-size: 40px;
+    font-family: 'Cormorant Garamond', serif;
+    padding-top: 30px;
+    padding-bottom: 10px;
+    padding-left: 3px;
+}
+
+h3{padding-top: 20px;
+    color: #25316D;
+}
+
+p,li {line-height: 1.8;
+    text-align: justify;
+    color: #5F6F94;
+}
+
+ul{padding: 0; /*enlever retrait automatique des listes*/
+    list-style-type: none; /*enlever bullet point automatique des listes*/
+}
+
+
+*{margin: 0;
+    padding: 0;} /*réinistialise tous les marges et padding à zéro*/
+
+#banner {background-color: white;
+    border-bottom: 1px solid rgb(0, 0, 0, 0.1);
+    box-shadow: 0px 1px 2px rgba(100, 100, 100, 0.1);
+    padding: 25px;
+    position: fixed; /*permet de laisser la bannière fixe*/
+    width: 100%; /*permet de gérer la largeur de la bannière fixe*/
+    top:0%; /*permet de gérer la lposition de la bannière fixe*/
+    }
+
+#text{ background-color: white;
+    width: 700px;
+    margin: auto; /*centrage auto de la div texte*/
+    margin-top: 140px;
+    margin-bottom: 40px;
+    padding: 50px;
+    border-radius: 4px;
+    box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.1);
+}
+
+#profil { display:flex; /*permet d'aligner les éléments de la div et donc mettre txt à droite*/
+}
+
+#myself{ width: 200px;
+    border-radius: 2px;
+    margin-bottom: 10px;
+    margin-left: 32px;
+    box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.2);
+}
+
+#txtprofil{ padding-left: 20px;
+    padding-top: 40px;
+}
+
+#education li{padding-bottom: 15px;
+}
+
+#media {text-align: center;}
+
+#list-icon {list-style-type: none; /*enlever mise en page auto des listes*/
+    display: inline-flex; /*mettre les éléments <li> à l'horizontal*/  
+}
+
+a {text-decoration: none; /*enlever mise en page automatique des liens*/
+    color: #ffffff;
+    padding: 10px 10px 10px 12px;
+    background-color: #25316D;
+    border-radius: 50%;
+}
+
+#btn-enveloppe {padding: 10px 4px 4px 10px}
+#btn-enveloppe :hover {background-color:#5F6F94}
+
+#btn-linkedin {padding: 10px 4px 4px 20px}
+#btn-linkedin :hover {background-color:#5F6F94}
+
+@media (max-width: 850px){ /*avoir un responsive design> design change de format selon taille de l'écran*/
+    #text { width: 600px;}
+    #myself { width: 250px;}
+}
+
+@media (max-width: 725px){
+    #text { width: 500px;}
+    #profil { display:block;
+        text-align: center;}
+
+    #myself { width: 300px;
+    }
+}
+
+@media (max-width: 600px) {
+    #text { width: 410px}
+}
